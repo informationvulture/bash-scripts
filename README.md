@@ -8,7 +8,7 @@ These are various Bash scripts that I have created with several goals in mind:
 
 As inevitably it will be, I will violate one or two of these goals.
 
-## Print the number of failed login attempts
+## tat.py - Print the number of failed login attempts
 This script reads the auth.log file, specifically the "Failed password" lines.
 
 
