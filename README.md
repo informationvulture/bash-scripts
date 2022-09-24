@@ -8,6 +8,8 @@ These are various Bash scripts that I have created with several goals in mind:
 
 As inevitably it will be, I will violate one or two of these goals.
 
-###### Print the number of failed login attempts
+## Print the number of failed login attempts
 This script reads the auth.log file, specifically the "Failed password" lines.
+
+
 It's helpful if you would like a quick overview on how many failed login attempts there was in a specific time period, currently said to the first and last instance in the log file.
