@@ -19,8 +19,17 @@ beg_time=$(printf "$LOG_FILE" | head -1 | cut -f1-3 -d' ')
 end_time=$(printf "$LOG_FILE" | tail -1 | cut -f1-3 -d' ')
 
 
+# Get the total days (possibly helpful)
+beg_sec=$(date --date "$beg_time" +%s)
+end_sec=$(date --date "$end_time" +%s)
+final_days=$(((end_sec - beg_sec)/86400))
+
+
 # Print the useful info.
 printf "From $beg_time to $end_time: \n"
 
 
 printf "There have been $attempts attempts so far \n"
+
+
+printf "Or, that means in $final_days days \n".
