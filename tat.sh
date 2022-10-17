@@ -32,4 +32,4 @@ printf "From $beg_time to $end_time: \n"
 printf "There have been $attempts attempts so far \n"
 
 
-printf "Or, that means in $final_days days \n".
+printf "Or, that means in $final_days days. \n"
